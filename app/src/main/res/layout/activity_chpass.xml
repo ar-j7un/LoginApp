@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="696dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="625dp">
+
+            <TextView
+                android:id="@+id/e1"
+                android:layout_width="300dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="180dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="text"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/e2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/e2"
+                android:layout_width="300dp"
+                android:layout_height="44dp"
+                android:ems="10"
+                android:hint="Old Password"
+                android:inputType="text|textPassword"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478" />
+
+            <EditText
+                android:id="@+id/e3"
+                android:layout_width="300dp"
+                android:layout_height="44dp"
+                android:ems="10"
+                android:hint="New Password"
+                android:inputType="text|textPassword"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.609" />
+
+            <EditText
+                android:id="@+id/e4"
+                android:layout_width="300dp"
+                android:layout_height="44dp"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="text|textPassword"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.743" />
+
+            <Button
+                android:id="@+id/bPass"
+                android:layout_width="191dp"
+                android:layout_height="83dp"
+                android:backgroundTint="#304FFE"
+                android:onClick="cPass"
+                android:text="Update Password"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/e2"
+                app:layout_constraintVertical_bias="0.854" />
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="289dp"
+                android:layout_height="45dp"
+                android:text="Change Password"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/e1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.679" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
